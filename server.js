@@ -17,36 +17,7 @@ var articleone={
      var date=data.date;
      var heading=data.heading;
      var content=data.content;
-     
-     var htmlTeplate='
-     <html>
-<head>
-    <title>
-        s{title}
-    </title>
-    <link href="/ui/style.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="container">
-    <div>
-        <a href="/">Home</a>
-    </div>
-    <hr/>
-    <h3>
-        s{heading}
-    </h3>
-    <div>
-        s{date}
-    </div>
-    <div>
-        <p>
-        s{content}
-        </p>
-    </div>
-    </div>
-</body>
-</html>';
-     return htmlTemplate;
+      return htmlTemplate;
       }
 
 app.get('/', function (req, res) {
