@@ -24,7 +24,7 @@ button.onlick=function(){
         if(request.readyState===XMLHttprequest.DONE){
             if(request.status===200){
                 var counter=request.responseText;
-                var span=document.getElementById('count');
+                var span=document.getElementById('counter');
                 span.innerHTML=counter.toString();
             }
         }
@@ -32,7 +32,7 @@ button.onlick=function(){
         request.send(null);
     };
     counter=counter+1;
-    var span=document.getElementById('count');
+    var span=document.getElementById('counter');
     span.innerHTML=counter.toString();
     
 };
